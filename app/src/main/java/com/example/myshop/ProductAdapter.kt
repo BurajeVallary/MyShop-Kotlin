@@ -27,7 +27,7 @@ class ProductAdapter (var productList: List<Product>): RecyclerView.Adapter<Prod
             .load(currentProduct.thumbnail)
             .resize(300,300)
             .centerCrop()
-            .into(binding.ivadapter)
+            .into(binding.ivavatar)
 
     }
 

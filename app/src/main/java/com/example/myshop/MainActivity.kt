@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful){
                     var product = response.body()?.products
                     //responsible to make sure everything is working
-//                    binding.rvProducts.layoutManager = GridLayoutManager(MainActivity.this@, 2);
-//                  var productAdapter=ProductAdapter(product?: emptyList())
+//
                     val productAdapter = ProductAdapter(product ?: emptyList())
                     binding.rvProducts.layoutManager = GridLayoutManager(this@MainActivity,2)
 //                   binding.rvProducts.layoutManager=LinearLayoutManager(this@MainActivity)
